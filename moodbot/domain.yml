@@ -47,16 +47,3 @@ responses:
     - text: "{name} do you like to do sports?"
   utter_default:
     - text: "Sorry, I didn't get that, can you rephrase?"
-
-actions:
-  - utter_greet
-  - utter_greet_name
-  - utter_cheer_up
-  - utter_go_walk
-  - utter_did_that_help
-  - utter_goodbye
-  - utter_iamabot
-  - utter_happy
-  - utter_ask_name
-  - utter_ask_sports
-  - utter_default
