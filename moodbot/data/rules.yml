@@ -5,7 +5,7 @@ rules:
   - rule: Begruessung verarbeiten
     steps:
       - intent: greet
-      - action: utter_greet
+      - action: utter_ask_name
 
   - rule: Name erfassen und antworten
     steps:
