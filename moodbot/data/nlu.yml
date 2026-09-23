@@ -1,0 +1,294 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hallo
+    - guten tag
+    - grüß gott
+    - servus
+    - grüß dich
+    - hi zusammen
+    - hallo zusammen
+    - guten morgen
+    - guten abend
+    - moin moin
+    - yo
+    - greetings
+    - howdy
+    - whats up
+    - hiya
+    - morning
+    - evening
+    - hey folks
+    - hi everyone
+    - good day
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tschüss
+    - auf wiedersehen
+    - bis später
+    - bis bald
+    - schönen tag noch
+    - gute nacht
+    - wir sehen uns
+    - mach's gut
+    - bis dann
+    - ciao
+    - see ya
+    - catch you later
+    - talk to you later
+    - take care
+    - farewell
+    - have a good one
+    - gotta go
+    - see you soon
+    - bye for now
+    - night night
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ja
+    - genau
+    - stimmt
+    - auf jeden fall
+    - sicher
+    - natürlich
+    - absolut
+    - das passt
+    - alles klar
+    - gerne
+    - yeah
+    - yep
+    - sure
+    - absolutely
+    - definitely
+    - totally
+    - sounds great
+    - alright
+    - for sure
+    - you bet
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nein
+    - nö
+    - auf keinen fall
+    - nicht wirklich
+    - das stimmt nicht
+    - definitiv nicht
+    - ich glaube nicht
+    - lieber nicht
+    - falsch
+    - keineswegs
+    - nope
+    - nah
+    - no thanks
+    - absolutely not
+    - not at all
+    - I decline
+    - negative
+    - not interested
+    - I don't want to
+    - no chance
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - mir geht es super
+    - wunderbar
+    - hervorragend
+    - sehr gut
+    - fantastisch
+    - toll
+    - mega gut
+    - ich fühle mich großartig
+    - alles bestens
+    - klasse
+    - feeling awesome
+    - I feel great
+    - fantastic
+    - doing really well
+    - I'm on top of the world
+    - couldn't be better
+    - super good
+    - brilliant
+    - excellent
+    - feeling fantastic
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - mir geht es schlecht
+    - ich bin traurig
+    - nicht so gut
+    - beschissen
+    - mir geht's nicht gut
+    - ich bin enttäuscht
+    - heute ist ein schlechter tag
+    - ich fühle mich mies
+    - überhaupt nicht gut
+    - furchtbar
+    - I feel terrible
+    - feeling down
+    - I'm feeling awful
+    - miserable
+    - bad day
+    - feeling blue
+    - really upset
+    - I am feeling low
+    - I'm depressed
+    - terrible
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - bist du ein bot?
+    - bist du ein mensch?
+    - spreche ich mit einer ki?
+    - wer bist du?
+    - bist du ein roboter?
+    - redest du echtes deutsch oder bist du ein bot?
+    - bist du eine künstliche intelligenz?
+    - bin ich hier mit einem bot verbunden?
+    - bist du echt oder ein bot?
+    - bist du ein reales lebewesen?
+    - is this an AI?
+    - are you real?
+    - are you an artificial intelligence?
+    - who am I speaking with?
+    - are you a real person?
+    - am I speaking to a human or an AI?
+    - are you automated?
+    - are you a robot?
+    - is a bot answering me?
+    - are you a virtual assistant?
+
+- intent: tell_name
+  examples: |
+    - I am [Marcel](name)
+    - Call me [Patrick](name)
+    - It's [Aline](name)
+    - I'm [Irene](name)
+    - My name is [Marco](name)
+    - People call me [Marco](name)
+    - [Jennifer](name)
+    - Call me [Max](name)
+    - [Hanna](name)
+    - [Sarah](name)
+    - Ich heiße [Stefan](name)
+    - Ich bin der [Lukas](name)
+    - Nenn mich [Tobias](name)
+    - Mein Name lautet [Alexander](name)
+    - Ich bin die [Laura](name)
+    - Du kannst mich [Julia](name) nennen
+    - Hier ist [Maximilian](name)
+    - [Lisa](name) ist mein Name
+    - Man nennt mich [Felix](name)
+    - [Anna](name) hier
+    - Ich heiße [Melanie](name)
+    - Nenne mich [Christian](name)
+    - Mein Vorname ist [Sebastian](name)
+    - Ich bin [Katharina](name)
+    - Ich werde [Sven](name) genannt
+    - [Florian](name) ist mein Name
+    - Sag einfach [Daniel](name) zu mir
+    - [Nico](name) ist mein Name
+    - Ich höre auf den Namen [Jan](name)
+    - Mein Rufname ist [Philipp](name)
+    - [David](name) ist der Name
+    - Nennen Sie mich [Müller](name)
+    - Ich bin Frau [Wagner](name)
+    - Ich bin Herr [Schneider](name)
+    - [Vanessa](name) am Apparat
+    - Hier spricht [Dominik](name)
+    - [Paul](name)
+    - [Leon](name)
+    - [Mia](name)
+    - [Emma](name)
+    - Ich bin es, [Simon](name)
+    - [Fabian](name) heiße ich
+    - [Sandra](name) ist mein Name
+    - Nenn mich einfach [Tom](name)
+    - Du darfst mich [Nina](name) nennen
+    - [Christina](name) hier
+    - [Markus](name) am Telefon
+    - Mein Name ist [Stefanie](name)
+    - Ich heiße übrigens [Moritz](name)
+    - [Julian](name) ist mein Name
+    - Hallo, ich bin [Monika](name)
+    - Hi, ich heiße [Kevin](name)
+    - Hey, nenn mich [Lea](name)
+    - Ich bin [Verena](name)
+    - Mein Vorname ist [Manuel](name)
+    - [Timo](name) heiße ich übrigens
+    - Sagen Sie einfach [Peter](name) zu mir
+    - [Janine](name) mein Name
+    - Man ruft mich [Marcel](name)
+    - Ich bin der [Andreas](name)

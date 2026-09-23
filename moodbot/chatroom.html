@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chatroom</title>
+   <link rel="stylesheet" href="Chatroom.css" />
+   <link rel="stylesheet" type="text/css" href="index.css">
+   <link rel="stylesheet" type="text/css" href="theme2.css" />
+</head>
+<body>
+   <div class="chat-container"></div>
+   <script src="Chatroom.js"></script>
+   <script type="text/javascript">
+      var chatroom = new window.Chatroom({
+          host: "https://redesigned-broccoli-4qw559xv99gq27p5r-5005.app.github.dev",
+          title: "Moodbot",
+          container: document.querySelector(".chat-container"),
+          welcomeMessage: "Nice to meet you.",
+          speechRecognition: "en-US",
+          voiceLang: "en-US"
+      });
+      chatroom.openChat();
+   </script>
+</body>
+</html>
